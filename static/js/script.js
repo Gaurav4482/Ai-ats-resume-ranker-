@@ -1,0 +1,1 @@
+console.log("AI ATS Resume Ranker loaded");

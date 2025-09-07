@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI ATS Resume Ranker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>AI ATS Resume Ranker</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <label for="job_desc">Paste Job Description:</label><br>
+            <textarea name="job_desc" rows="6" required></textarea><br><br>
+
+            <label for="resumes">Upload Resumes (PDF, DOCX, TXT):</label><br>
+            <input type="file" name="resumes" multiple required><br><br>
+
+            <button type="submit">Rank Resumes</button>
+        </form>
+    </div>
+</body>
+</html>
